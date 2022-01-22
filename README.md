@@ -11,6 +11,10 @@ Nesse projeto você aprenderá:
  3. Como posicionar os elementos com Flexbox
  4. Como utilizar plugins JQuery a favor da sua aplicação
 
-## Exemplo
+## Alterações
+ 1. Modificado para ReactJS
+ 2. API utilizada: ![TMDB](https://www.themoviedb.org/?language=pt-BR)
+ 3. Aquisição api: https://api.themoviedb.org/3/movie/550?api_key=3db42a173ff5cf5d10d55cef8838ca75
+
 
 ![gif](https://github.com/Maarii72/interface-netflix/blob/main/img/4aa22437-e539-461d-98a4-bc71bb3bf701.gif)
