@@ -16,6 +16,8 @@ Nesse projeto você aprenderá:
  2. API utilizada: [TMDB](https://www.themoviedb.org/?language=pt-BR)
  3. Aquisição api: https://api.themoviedb.org/3/movie/550?api_key=3db42a173ff5cf5d10d55cef8838ca75
  4. Aula: Ministrada por Bonieky Lacerda, https://b7web.com.br/fullstack/
+ 5. Adicionei funcionalidade no botão assistir
+
 
 
 ![gif](https://github.com/Maarii72/interface-netflix/blob/main/img/4aa22437-e539-461d-98a4-bc71bb3bf701.gif)
