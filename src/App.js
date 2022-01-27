@@ -12,8 +12,7 @@ export default() => {
   const[featuredData, setFeaturedData] = useState(null);
   // sumir ou aparecer o header
   const [blackHeader, setBlackHeader] = useState(false);
-  //video
-  const [movieVideo, setMovieVideo] = useState([]);
+  
 
   useEffect(() =>{
   //executa esse bloco ao carregar
