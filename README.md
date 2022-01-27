@@ -20,4 +20,4 @@ Nesse projeto você aprenderá:
 
 
 
-![gif](https://github.com/Maarii72/interface-netflix/blob/main/img/4aa22437-e539-461d-98a4-bc71bb3bf701.gif)
+![gif](https://github.com/Maarii72/interface-netflix/blob/master/public/img/gif.gif)
