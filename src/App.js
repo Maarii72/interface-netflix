@@ -63,6 +63,11 @@ export default() => {
         ))}
       </section>
 
+      {movieList.length <= 0 &&
+        <div className="loading">
+          <img src="/img/netflix-loading.gif" alt="Carregando..." />
+        </div>
+      }
       
 
     </div>
