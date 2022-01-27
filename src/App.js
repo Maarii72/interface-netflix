@@ -1,15 +1,17 @@
 import React, {useEffect, useState} from "react";
 import Tmdb from './Tmdb';
 import './App.css'
-import MovieRow from "./components/MovieRow/MovieRow";
-import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie';
-
+import MovieRow from "./components/MovieRow";
+import FeaturedMovie from './components/FeaturedMovie';
+import Header from './components/Header';
 
 export default() => {
   //para ser exibida a lista
   const [movieList, setMovieList] = useState([]);
   //para o destaque ser exibido
   const[featuredData, setFeaturedData] = useState(null);
+  // sumir ou aparecer o header
+  const [blackHeader, setBlackHeader] = useState(false);
 
   useEffect(() =>{
   //executa esse bloco ao carregar
@@ -31,18 +33,38 @@ export default() => {
   loadAll();
   }, []);
 
+  useEffect(()=>{
+    const scrollListener = () =>{
+      if (window.scrollY > 10) {
+        setBlackHeader(true);
+      }else{
+        setBlackHeader(false);
+      }
+    }
+    window.addEventListener('scroll', scrollListener);
+
+    return() =>{
+      window.removeEventListener('scroll', scrollListener);
+    }
+  },[]);
+
   return(
     <div className="page">
 
-    {featuredData &&
-      <FeaturedMovie item={featuredData} />
-    }
+      <Header black={blackHeader}/>
+
+      {featuredData &&
+        <FeaturedMovie item={featuredData} />
+      }
 
       <section className="lists">
         {movieList.map((item, key) =>(
           <MovieRow key={key} title={item.title} items={item.items}/>
         ))}
       </section>
+
+      
+
     </div>
   );
 };
