@@ -1,6 +1,7 @@
 # Interface Netflix
 
-Este repositório contém a atividade prática da [Digital Innovation One](https://digitalinnovation.one/). Aula ministrada por [Felipe Aguiar](https://github.com/felipeAguiarCode). 
+Este repositório contém a atividade prática da [Digital Innovation One](https://digitalinnovation.one/). Aula ministrada por [Felipe Aguiar](https://github.com/felipeAguiarCode).
+link:https://netflix-clone23243.netlify.app/
 
 ## Atividade: 
 
